@@ -15,13 +15,14 @@ and then prints out the longest one
 """
 
 
-def longest(x,y,z):
-    max_ = max(x,y,z,key=len) 
+def longest(x):
+    x = x.split(',')
+    max_ = max(x,key=len) 
     return max_
 
 
-print(longest('Umuzi', '123445678', 'apples' ))
-print(longest('Reactive', '1643668678', 'amazing.umuzi.' ))
-print(longest('Clever', '1567', 'yesterday' ))
+print(longest('Umuzi, 123445678, apples' ))
+print(longest('Reactive, 1643668678, amazing.umuzi.' ))
+print(longest('Clever, 1567, yesterday' ))
 
 
