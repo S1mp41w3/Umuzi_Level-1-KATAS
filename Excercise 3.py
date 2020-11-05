@@ -23,12 +23,13 @@ eg square(4) should output
 ####
 
 """
-
 def square(x):
-    row = ('#'*(x)) 
-    line_break =  row +'\n'
+    y = x//2
+    row = ('#'*(y)) 
+    line_break =  row +'\n' 
     square_ = (row + line_break)
-    return square_*x
+    return square_*(x)
+
 
 print(square(2))
 print(square(4))
